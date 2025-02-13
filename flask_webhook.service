@@ -1,0 +1,12 @@
+[Unit]
+Description=Flask Webhook Server
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/me/flask-webhook-server
+ExecStart=/home/me/flask-webhook-server/.env/bin/python /home/me/flask-webhook-server/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
