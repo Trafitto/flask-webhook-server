@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=trafitto
-WorkingDirectory=/home/me/flask-webhook-server
-ExecStart=/home/me/flask-webhook-server/.venv/bin/python /home/me/flask-webhook-server/main.py
+WorkingDirectory=/home/trafitto/flask-webhook-server
+ExecStart=/home/trafitto/flask-webhook-server/.venv/bin/python /home/trafitto/flask-webhook-server/main.py
 Restart=always
 
 [Install]
